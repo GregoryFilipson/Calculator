@@ -29,7 +29,7 @@ private Calculator calculator;
 
     @Test
     public void testIsPositive(){
-        Assert.assertTrue(calculator.isPositive.test(-2));
+        Assert.assertTrue(calculator.isPositive.test(2));
     }
 
     @Test
@@ -40,9 +40,9 @@ private Calculator calculator;
     }
 
     @org.junit.jupiter.api.Test
-    public void testDevideException() {
+    public void testDevideExceptions() {
         final Integer a = 6;
-        final Integer b = 0;
+        final Integer b = 1;
         Assertions.assertThrows(NullPointerException.class, () -> {
             calculator.devide.apply(a, b);
         });
